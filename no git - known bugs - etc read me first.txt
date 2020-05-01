@@ -1,0 +1,16 @@
+Started this project in a rush and glossed over the need for git.
+
+All is not lost, I have zipped previous iterations 2 to 8.
+
+There is also a random quote generator that I made first in order to get a working front end prototype to check my back end list retrieval was working.
+
+Known bugs;
+
+On the second time you edit a character it updates the previous character edit with the new information.
+
+On the second time you submit an edit, multiple homers are appended to the page.
+
+No unit testing, since its been over 5 years since I've worked with spring I spent around half my alloted 48 development time on developing the backend and did not have time to implement unit testing.
+
+If you would like to see unit testing I can spend more time on this.
+

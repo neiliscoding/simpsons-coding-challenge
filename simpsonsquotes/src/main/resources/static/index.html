@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Simpsons</title>
+    <meta name="description" content="Simpsons quotes">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+<!--     <link rel="stylesheet" href="assets/bootstrap3-editable-1.5.1/bootstrap3-editable/css/bootstrap-editable.css"/> -->
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="#">Simpsons</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page landing-page">
+        <section class="clean-block clean-info dark" style="padding-bottom: 20px;">
+            <div class="container">
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="first-name" class="col-form-label">First Name:</label>
+            <input type="text" class="form-control" id="firstName">
+          </div>
+       	<div class="form-group">
+            <label for="last-name" class="col-form-label">Last Name:</label>
+            <input type="text" class="form-control" id="lastName">
+          </div> 
+         <div class="form-group quote-group">
+            <label for="last-name" class="col-form-label">Quote:</label>
+            <input type="text" class="form-control" id="quote1">
+          </div> 
+          <div class="form-group quote-group">
+            <label for="last-name" class="col-form-label">Quote:</label>
+            <input type="text" class="form-control" id="quote2">
+          </div> 
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button id="cancel" type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button id="save" type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--                 <div class="block-heading">
+                    <h2 class="text-info">Search</h2>
+                </div> -->
+                <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
+                    <div class="container"><a class="navbar-brand" href="#">Enter Name</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse"
+                            id="navcol-1">
+                            <form class="form-inline mr-auto" target="_self">
+                                <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" id="search-field" name="search" style="width: 300px;"></div>
+                            </form>
+                            <!-- <a class="btn btn-light action-button" role="button" href="#">Search</a> -->
+                            </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section class="clean-block about-us">
+            <div id="towniecontainer" class="container">
+<!--                 <div class="block-heading" style="padding: 0px;">
+                    <h2 class="text-info">The characters</h2>
+                    <p>Here are the characters</p>
+                </div> -->
+                <div  id="townierow" class="row justify-content-center">
+                    <div  id="towniecol" class="tcol col-sm-6 col-lg-4">
+                        <div class="card clean-card text-center"><img class="img-thumbnail img-fluid card-img-top w-100 d-block" >
+                            <div class="card-body info">
+                                <h4 class="card-title"></h4>
+                                <p class="card-text"></p>
+                                <div class="icons"><a class="edit-button" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="name here"><i class="material-icons">mode_edit</i></a><a class="delete-button" href="#"  onclick="deleteTownie(this)"><i class="material-icons">delete</i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        
+       <section class="clean-block clean-hero" style="background-image: url(&quot;assets/img/simpsons-wallpaper-1920x1080-for-iphone-6.jpg&quot;);color: rgba(9, 162, 255, 0.85);">
+            <div class="text">
+                <h2  id="randtownie" >name</h2>
+                <p id="randquote" >quote</p>
+                <button id="randbutton" class="btn btn-outline-light btn-lg" type="button">
+                <i class="fas fa-dice" style="font-size: 30px;"></i>
+                 I feel lucky!</button>
+                </div>
+        </section>
+        
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/smoothproducts.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+<!--     <script src="assets/bootstrap3-editable-1.5.1/bootstrap3-editable/js/bootstrap-editable.min.js"></script> -->    
+<script src="main.js"></script>
+    
+</body>
+
+</html>
